@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+	    
+    <head>
+    	
+        <link rel="stylesheet" type="text/css" href="./resources/css/vendor/bootstrap-3.1.0.min.css" />
+        <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+        <script src="./resources/js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="./resources/js/bond.js"></script>
+                        
+    </head>
+    
+    <div id="dialog">This is a playback of all your actions in the last <span id="seconds"></span> seconds.  Look familiar?</div>
+    <div id="mouse"></div>
+    
+    <body>
+    	
+    	<audio autoplay loop>
+  			<source src="./resources/music/jamesbond.ogg" type="audio/ogg">
+  			<source src="./resources/music/jamesbond.mp3" type="audio/mpeg">
+  			<source src="./resources/music/jamesbond.wav" type="audio/wav">
+		</audio>
+
+    	<div class="container">
+    		
+    		<div class="jumbotron">
+    			
+    			<h1>Bond.js</h1>
+    			    			
+    			<p class="lead">
+		    		Bond.js is a demo and warning of what companies can track on the web.  It records
+		    		everything you do on a webpage, such as mouseclicks, keystrokes, and scrolls, and
+		    		plays them back to you in exact order.  You're essentially watching everything that you 
+		    		did.
+		    		<br /><br />
+		    		Why is this important, you ask? A social network could use a script like this to 
+		    		see exactly where their users go, exactly how long they spend on posts, etc.  A hacker
+		    		could embed a script like this in order to get all the information they could about a user:
+		    		their usernames, passwords, and sensitive information would no longer be safe.
+		    		<br /><br />
+		    		We often falsely assume that we are safe if we disable cookies.  This website is all JavaScript,
+		    		and disabling JavaScript leads to a loss of functionality on most webpages.  So go ahead, make yourself
+		    		at home on this webpage.  <em>Everything you do will be recorded.</em> Luckily, nothing you do on this page
+		    		will be sent anywhere.
+		    		<br />
+		    		<br />
+    				If you're a developer and want to know more, click <a href="#">here</a> for the Github repository.
+    			</p>
+    			
+    			<p>
+    				<input type="button" class="btn btn-lg btn-warning" id="replay" value="Click Here to Replay Actions" />
+    			</p>
+    			
+    		</div>
+    		
+    		<div class="row-marketing">
+    			
+    			<p class="lead">Here we have a search box.  Type something in to search Flickr for images.  Everything that you do and see is recorded.</p>
+    			
+    			<input type="text" placeholder="Search" id="search" class="form-control" />
+    			<br />
+    			<br />
+    			<div id="output"></div>
+    			
+    			<br />
+    			<br />
+    			
+    			<p class="lead">Here are some elements that you can manipulate.  Go ahead, manipulate some of them.</p>
+    			
+    			<table class="table table-striped table-bordered">
+					<tr>
+						<td><h3>Text Input</h3></td>
+						<td><input type="text" class="form-control" placeholder="Text"></td>
+					</tr>
+					<tr>
+						<td><h3>Password Input</h3></td>
+						<td><input type="password" class="form-control" placeholder="Password"></td>
+					</tr>
+					<tr>
+						<td><h3>Text Area</h3></td>
+						<td><textarea placeholder="Textarea" class="form-control"></textarea></td>
+					</tr>		
+					<tr>
+						<td><h3>Select Menu</h3></td>
+						<td>
+							<select class="form-control">
+								<option>Red</option>
+								<option>Green</option>
+								<option>Blue</option>
+								<option>Yellow</option>
+							</select>
+						</td>		
+					</tr>
+					<tr>
+						<td><h3>Checkbox</h3></td>
+						<td>
+							<input type="checkbox">
+						</td>
+					</tr>
+					<tr>
+						<td><h3>Radio Button</h3></td>
+						<td>
+							<input type="radio">
+						</td>
+					</tr>
+				</table>
+			
+		    	<br />
+		    	<br />
+		    	<h3>Scroll down the page.</h3>
+		    	<br />
+		    	<p class="lead">
+		    		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac risus odio. Pellentesque quis arcu aliquet, vehicula velit in, aliquet turpis. Donec laoreet diam a elit commodo ullamcorper. Curabitur eget egestas ipsum, non sagittis sem. Praesent eleifend venenatis ante, eu laoreet magna facilisis vel. Sed dictum est aliquam accumsan scelerisque. Morbi volutpat semper augue quis tincidunt. Duis volutpat ultricies mauris, vel ullamcorper dui auctor eget. Praesent porttitor ante eget orci adipiscing fermentum. Donec euismod tempor consequat.
+		
+					Cras congue egestas mauris, a egestas justo adipiscing ac. Aliquam vitae posuere purus. Nulla facilisi. Maecenas id dolor turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse mollis velit a sagittis posuere. Mauris non faucibus leo. Donec a purus diam. Cras sit amet ligula urna. Nam sit amet odio id sem ornare lacinia id id felis. Donec sit amet elementum libero, sed fringilla elit. Aliquam vestibulum vel mi elementum laoreet. Fusce a fermentum est. Nam laoreet posuere dolor eu ornare.
+					
+					Nulla euismod erat cursus, euismod ipsum quis, auctor est. Curabitur lorem massa, interdum a quam ut, sodales luctus purus. Vestibulum consectetur vehicula sollicitudin. Sed magna ipsum, facilisis sed sem ut, sagittis viverra dolor. Donec elementum facilisis urna eget faucibus. Curabitur vel nisl consectetur, bibendum sem in, gravida ante. Sed vitae interdum velit. Ut ultrices nunc in turpis dapibus mattis. Sed bibendum molestie justo, in gravida ipsum condimentum quis. Etiam arcu quam, fermentum quis egestas ac, pretium non magna. Sed ac interdum justo. Ut in suscipit sapien. Sed enim arcu, consequat sit amet tellus sed, pulvinar elementum nibh. Fusce vulputate lectus metus, sit amet mollis elit fringilla eget. Vestibulum ullamcorper id quam id rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					
+					Aliquam tempus bibendum tempus. Donec vehicula ac nisi vitae convallis. Praesent lobortis turpis a odio pulvinar volutpat. Nam ultricies nibh nec massa viverra, eu aliquet urna malesuada. Maecenas sit amet varius nibh. Nunc neque purus, ultrices vel aliquet ac, ultricies a orci. Donec lobortis metus odio, in placerat quam lacinia quis. Sed vel erat id sem condimentum ullamcorper sit amet id eros. Nam blandit nulla id hendrerit lobortis. Nullam vehicula venenatis urna ac bibendum.
+					
+					Aliquam est ligula, iaculis a metus eu, pellentesque facilisis lorem. Vivamus congue tellus sit amet est aliquam, aliquet venenatis nulla feugiat. Duis sodales at justo quis sagittis. Morbi consequat quam diam, id pretium magna lacinia eu. Morbi fermentum nunc urna, nec aliquam neque porta et. Nunc enim lectus, pellentesque et pellentesque vel, condimentum vitae ante. Donec augue massa, blandit eu viverra quis, adipiscing ut leo. Phasellus varius elementum lacus ac gravida. Duis adipiscing euismod bibendum. Vestibulum vel est vitae libero fermentum convallis. In vel dapibus magna. Duis vestibulum at nibh at tincidunt. Nam accumsan quis nisi a volutpat. Curabitur sollicitudin, ligula eget fringilla varius, dolor justo placerat neque, eu consequat tortor metus in nunc.
+					    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac risus odio. Pellentesque quis arcu aliquet, vehicula velit in, aliquet turpis. Donec laoreet diam a elit commodo ullamcorper. Curabitur eget egestas ipsum, non sagittis sem. Praesent eleifend venenatis ante, eu laoreet magna facilisis vel. Sed dictum est aliquam accumsan scelerisque. Morbi volutpat semper augue quis tincidunt. Duis volutpat ultricies mauris, vel ullamcorper dui auctor eget. Praesent porttitor ante eget orci adipiscing fermentum. Donec euismod tempor consequat.
+					
+					Cras congue egestas mauris, a egestas justo adipiscing ac. Aliquam vitae posuere purus. Nulla facilisi. Maecenas id dolor turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse mollis velit a sagittis posuere. Mauris non faucibus leo. Donec a purus diam. Cras sit amet ligula urna. Nam sit amet odio id sem ornare lacinia id id felis. Donec sit amet elementum libero, sed fringilla elit. Aliquam vestibulum vel mi elementum laoreet. Fusce a fermentum est. Nam laoreet posuere dolor eu ornare.
+					
+					Nulla euismod erat cursus, euismod ipsum quis, auctor est. Curabitur lorem massa, interdum a quam ut, sodales luctus purus. Vestibulum consectetur vehicula sollicitudin. Sed magna ipsum, facilisis sed sem ut, sagittis viverra dolor. Donec elementum facilisis urna eget faucibus. Curabitur vel nisl consectetur, bibendum sem in, gravida ante. Sed vitae interdum velit. Ut ultrices nunc in turpis dapibus mattis. Sed bibendum molestie justo, in gravida ipsum condimentum quis. Etiam arcu quam, fermentum quis egestas ac, pretium non magna. Sed ac interdum justo. Ut in suscipit sapien. Sed enim arcu, consequat sit amet tellus sed, pulvinar elementum nibh. Fusce vulputate lectus metus, sit amet mollis elit fringilla eget. Vestibulum ullamcorper id quam id rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					
+					Aliquam tempus bibendum tempus. Donec vehicula ac nisi vitae convallis. Praesent lobortis turpis a odio pulvinar volutpat. Nam ultricies nibh nec massa viverra, eu aliquet urna malesuada. Maecenas sit amet varius nibh. Nunc neque purus, ultrices vel aliquet ac, ultricies a orci. Donec lobortis metus odio, in placerat quam lacinia quis. Sed vel erat id sem condimentum ullamcorper sit amet id eros. Nam blandit nulla id hendrerit lobortis. Nullam vehicula venenatis urna ac bibendum.
+					
+					Aliquam est ligula, iaculis a metus eu, pellentesque facilisis lorem. Vivamus congue tellus sit amet est aliquam, aliquet venenatis nulla feugiat. Duis sodales at justo quis sagittis. Morbi consequat quam diam, id pretium magna lacinia eu. Morbi fermentum nunc urna, nec aliquam neque porta et. Nunc enim lectus, pellentesque et pellentesque vel, condimentum vitae ante. Donec augue massa, blandit eu viverra quis, adipiscing ut leo. Phasellus varius elementum lacus ac gravida. Duis adipiscing euismod bibendum. Vestibulum vel est vitae libero fermentum convallis. In vel dapibus magna. Duis vestibulum at nibh at tincidunt. Nam accumsan quis nisi a volutpat. Curabitur sollicitudin, ligula eget fringilla varius, dolor justo placerat neque, eu consequat tortor metus in nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac risus odio. Pellentesque quis arcu aliquet, vehicula velit in, aliquet turpis. Donec laoreet diam a elit commodo ullamcorper. Curabitur eget egestas ipsum, non sagittis sem. Praesent eleifend venenatis ante, eu laoreet magna facilisis vel. Sed dictum est aliquam accumsan scelerisque. Morbi volutpat semper augue quis tincidunt. Duis volutpat ultricies mauris, vel ullamcorper dui auctor eget. Praesent porttitor ante eget orci adipiscing fermentum. Donec euismod tempor consequat.
+					
+					Cras congue egestas mauris, a egestas justo adipiscing ac. Aliquam vitae posuere purus. Nulla facilisi. Maecenas id dolor turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse mollis velit a sagittis posuere. Mauris non faucibus leo. Donec a purus diam. Cras sit amet ligula urna. Nam sit amet odio id sem ornare lacinia id id felis. Donec sit amet elementum libero, sed fringilla elit. Aliquam vestibulum vel mi elementum laoreet. Fusce a fermentum est. Nam laoreet posuere dolor eu ornare.
+					
+					Nulla euismod erat cursus, euismod ipsum quis, auctor est. Curabitur lorem massa, interdum a quam ut, sodales luctus purus. Vestibulum consectetur vehicula sollicitudin. Sed magna ipsum, facilisis sed sem ut, sagittis viverra dolor. Donec elementum facilisis urna eget faucibus. Curabitur vel nisl consectetur, bibendum sem in, gravida ante. Sed vitae interdum velit. Ut ultrices nunc in turpis dapibus mattis. Sed bibendum molestie justo, in gravida ipsum condimentum quis. Etiam arcu quam, fermentum quis egestas ac, pretium non magna. Sed ac interdum justo. Ut in suscipit sapien. Sed enim arcu, consequat sit amet tellus sed, pulvinar elementum nibh. Fusce vulputate lectus metus, sit amet mollis elit fringilla eget. Vestibulum ullamcorper id quam id rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+					
+					Aliquam tempus bibendum tempus. Donec vehicula ac nisi vitae convallis. Praesent lobortis turpis a odio pulvinar volutpat. Nam ultricies nibh nec massa viverra, eu aliquet urna malesuada. Maecenas sit amet varius nibh. Nunc neque purus, ultrices vel aliquet ac, ultricies a orci. Donec lobortis metus odio, in placerat quam lacinia quis. Sed vel erat id sem condimentum ullamcorper sit amet id eros. Nam blandit nulla id hendrerit lobortis. Nullam vehicula venenatis urna ac bibendum.
+					
+					Aliquam est ligula, iaculis a metus eu, pellentesque facilisis lorem. Vivamus congue tellus sit amet est aliquam, aliquet venenatis nulla feugiat. Duis sodales at justo quis sagittis. Morbi consequat quam diam, id pretium magna lacinia eu. Morbi fermentum nunc urna, nec aliquam neque porta et. Nunc enim lectus, pellentesque et pellentesque vel, condimentum vitae ante. Donec augue massa, blandit eu viverra quis, adipiscing ut leo. Phasellus varius elementum lacus ac gravida. Duis adipiscing euismod bibendum. Vestibulum vel est vitae libero fermentum convallis. In vel dapibus magna. Duis vestibulum at nibh at tincidunt. Nam accumsan quis nisi a volutpat. Curabitur sollicitudin, ligula eget fringilla varius, dolor justo placerat neque, eu consequat tortor metus in nunc.
+				</p>
+    	
+    		</div>
+    		
+    	</div>
+    	    	
+    </body>
+    
+</html>
