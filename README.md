@@ -6,7 +6,9 @@ Bond.js is a demo and warning of what companies can track on the web. It records
 
 Why is this important, you ask? A social network could use a script like this to see exactly where their users go, exactly how long they spend on posts, etc. A hacker could embed a script like this in order to get all the information they could about a user: their usernames, passwords, and sensitive information would no longer be safe. 
 
-We often falsely assume that we are safe if we disable cookies. This website is all JavaScript, and disabling JavaScript leads to a loss of functionality on most webpages. So go ahead, make yourself at home on this webpage. Everything you do will be recorded. Luckily, nothing you do on this page will be sent anywhere.
+We often falsely assume that we are safe if we disable cookies. This website is all JavaScript, and disabling JavaScript leads to a loss of functionality on most webpages. So go ahead, make yourself at home on this webpage. Everything you do will be recorded.
+
+To reiterate: This is not intended to be used for commercial purposes.  Bond.js was created to demonstrate how companies can get information about you on the web.
 
 ## Features:
 
