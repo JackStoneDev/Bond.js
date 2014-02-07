@@ -19,7 +19,7 @@ This is not intended to be used for commercial purposes. Instead, Bond.js demons
 
 ## Under the Hood
 
-Bond.js captures DOM events as they occur, and inserts them into an array that contains the time of that event, the type of event, the target element, the target value (if applicable), the mouse coordinates at that time, and the scrollbar position at that time.  The array is then iterated over and scheduled actions are performed based on the time of each event, so everything fires exactly as it did for the user.  The mouse and scrollbar positions of the user are also updated at every event.
+Bond.js captures DOM events as they occur, and inserts them into an array that contains the time and type of each event, the target element, the target value (if applicable), and the mouse and scrollbar position at that time.  The array is then iterated over, and scheduled actions are performed based on the time of each event, so everything fires exactly as it did for the user.  The mouse and scrollbar positions are also updated continually.
 
 ## License
 
