@@ -9,7 +9,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-// Array of events that stores the time of a DOM event, the type of event, the target element, the target value (if applicable), the mouse coordinates at that time, and the scrollbar position at that time.
+// Array of events that stores the time and type of every DOM event, the target element, the target value (if applicable), and the mouse and scrollbar position at that time.
 var events = [];
 
 // Mouse coordinates.  Constantly updated via the mousemove event.
@@ -209,8 +209,8 @@ if (canUpdate)
 /*
  * Updates an array of events as DOM events occur.
  * 
- * Each entry has the time of the event in user history, the type of event, the target element, the target value (if applicable), the mouse 
- * coordinates at that time, and the scrollbar position at that time.
+ * Each entry has the time and type of each event, the target element, 
+ * the target value (if applicable), and the mouse and scrollbar position at that time.
  */
 
 function updateEvents(targetEvent, targetElement, targetValue)
