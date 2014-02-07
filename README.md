@@ -2,24 +2,24 @@
 
 ## [Live Demo](http://jackstonedev.com/portfolio/bond/ "Bond")
 
-Bond.js is a demo and warning of what companies can track on the web. It records everything you do on a webpage, such as mouseclicks, keystrokes, and scrolls, and plays them back to you in exact order. You're essentially watching everything that you did. 
+Bond.js is a demo showing how much information companies can track on the web, and also serves as a warning to all internet users. It records everything you do on a web page, such as mouseclicks, keystrokes, and scrolls, and plays them back to you in exact order. You're essentially watching every move you made. 
 
-Why is this important, you ask? A social network could use a script like this to see exactly where their users go, exactly how long they spend on posts, etc. A hacker could embed a script like this in order to get all the information they could about a user: their usernames, passwords, and sensitive information would no longer be safe. 
+Why is this important, you ask? A social network could use a script like this to see exactly where their users go, how long they spend on various posts, etc. Hackers could embed a script like this to get all the information they could about an individual. Usernames, passwords, and sensitive information would no longer be safe. 
 
-We often falsely assume that we are safe if we disable cookies. Bond.js is all JavaScript, and disabling JavaScript leads to a loss of functionality on most webpages.
+We often falsely assume that we are protected if we disable cookies. This website is all JavaScript, which many web sites rely on for core functionality.
 
-To reiterate: This is not intended to be used for commercial purposes.  Bond.js was created to demonstrate how companies can get information about you on the web.
+This is not intended to be used for commercial purposes. Instead, Bond.js demonstrates how much information companies can get about you on the web.	
 
 ## Features:
 
 - User actions are played back exactly as they occurred.
 - Fully-functional Flickr search implementation for demo's sake.
-- All actions are processed into a single array for developers to easily sell the data to advertisers.
+- All actions are processed into a single array, so your information can be easily sold.
 - No Flash or cookie dependency.
 
 ## Under the Hood
 
-Bond.js captures DOM events as they occur, and inserts them into an array that contains the time of that event, the type of event, the target element, the target value (if applicable), the mouse coordinates at that time, and the scrollbar position at that time.  The array is then iterated over and timed actions are performed based on the time of each event, so everything fires exactly as it did for the user.  A div that looks like a mouse pointer is animated exactly as the user originally moved it, and the page is scrolled based on where the user was.
+Bond.js captures DOM events as they occur, and inserts them into an array that contains the time of that event, the type of event, the target element, the target value (if applicable), the mouse coordinates at that time, and the scrollbar position at that time.  The array is then iterated over and timed actions are performed based on the time of each event, so everything fires exactly as it did for the user.  A div that looks like a mouse pointer is animated just as the user originally moved it, and the page is scrolled based on where the user was.
 
 ## License
 
