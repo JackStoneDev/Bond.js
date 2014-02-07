@@ -13,7 +13,7 @@ This is not intended to be used for commercial purposes. Instead, Bond.js demons
 ## Features:
 
 - User actions are played back exactly as they occurred.
-- Fully-functional Flickr search implementation for demo's sake.
+- Fully-functional Flickr search implementation is included for demo's sake.
 - All actions are processed into a single array, so your information can be easily sold.
 - No Flash or cookie dependency.
 
