@@ -315,7 +315,7 @@ $(document).ready(function() {
 	        
 			// Restore the output div.
 			// This is extremely localized and is not good design.
-			// However, restoring the original HTML changes object ID's, meaning events can not be replicated on the same objects.
+			// However, restoring the original HTML changes object IDs, meaning events can not be replicated on the same objects.
 			$("#output").html("");	
 			                       
 	        // Iterate through the array of events and perform timed actions.
