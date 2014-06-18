@@ -341,6 +341,7 @@ $(document).ready(function() {
 /*
  * Aborts all AJAX requests.
  * Used in the Flickr search to prevent delayed results.
+ * Source: http://stackoverflow.com/a/11612641
  */
 
 $.ajaxQ = (function() {
