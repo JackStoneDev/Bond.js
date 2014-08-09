@@ -23,7 +23,7 @@ Bond.js captures DOM events as they occur, and inserts them into an array that c
 
 ## License
 
-Bond.js is licensed under an MIT license.
+Bond.js is licensed under a MIT license.
 
 Copyright (c) 2014 Jack Stone.
 
